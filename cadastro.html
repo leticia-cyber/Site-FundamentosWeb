@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="shows.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>SHOWSS</title>
+
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Artist.html">Artist</a></li>
+      <li><a href="#">Festival</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="#">Quem Somos</a></li>
+      <li style="float: right;"><a href="#"><img src="cadastro.png" style="width:20px"></a></li>
+    </ul>
+  </nav>
+  <br>
+  <header>
+    <a href="index.html"><img src="Jaguar_Shows.png" class="media-object  img-responsive img-thumbnail"></a>
+  </header>
+
+
+
+  <div class="Cad-Cliente">
+
+
+    <form method="POST" action="" name="Cadastro">
+      <fieldset>
+
+        <legend>Cadastro</legend>
+
+        <div style="float:left;">
+          <label class="lab-cad" for="nome">Nome</label>
+          <input class="input-cad" type="text" name="nome" min="3" title="Nome Completo. Exemplo: Fulano de Tal"
+            placeholder="Ex: Fulano de Tal" size="40" autocomplete="off" required><br><br>
+
+
+          <label class="lab-cad" for="CPF">CPF</label>
+          <input class="input-cad" type="text" name="cpf" id="CPF" placeholder="Ex: XXX.XXX.XXX-XX"
+            title="Digite o CPF no seguinte formato: XXX.XXX.XXX-XX" size="15" autocomplete="off" required><br><br>
+
+          <label class="lab-cad" for="username">Usuário</label>
+          <input class="input-cad" type="text" pattern="\w+" name="usuario"
+            title="Use somente letras, números ou sublinhado!" size="10" autocomplete="off" required><br><br>
+
+          <label class="lab-cad" for="pwd1">Senha</label>
+          <input class="input-cad" type="password" name="senha"
+            onchange="form.pwd2.pattern = RegExp.escape(this.value);" size="10" autocomplete="off" required><br><br>
+
+          <label class="lab-cad" for="pwd2">Confirmar senha</label>
+          <input class="input-cad" type="password" name="confirmasenha" size="10" autocomplete="off" required>
+
+
+        </div>
+
+
+        <div style="float:rib-cad">Endereço:</label>
+          <input class="input-cad" type="text" name="ender" placeholder="Rua.tal" size="40" autocomplete="off">
+          <input type="num" name="num" placeholder="Ex.123" size="5" autocomplete="off"><br>
+          <br>
+
+          <label class="lab-cad">Telefone:</label>
+          <input class="input-cad" type="telefone" name="telefone" size="15" id="Celular" title="Telefone Celular"
+            placeholder="Ex:(XX)XXXXX-XXXX" autocomplete="off" required><br>
+          <script type="text/javascript">$("#Celular").mask("(00) 00000-0009");</script><br>
+
+
+        </div>
+
+      </fieldset>
+
+      <div style="float:center;">
+        <p><input class="btn" type="submit" class="enviar" value="enviar"></p>&nbsp;&nbsp;
+        <p><input class="btn" type="reset" value="Reset"></p>
+      </div>
+
+    </form>
+
+    <br>
+
+
+  </div>
+
+  <style>
+    .input-cad {
+      width: 500px;
+      padding: 20px;
+      color: black;
+      margin-left: 5px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid;
+    }
+
+    .input-cad:hover,
+    .input-cad:focus {
+      border-color: #CDDAD8;
+      box-shadow: 5px 0px 5px #e2b8ac;
+      background-color: #CDDAD8;
+      color: black;
+      font-weight: bold;
+    }
+
+    .btn {
+      width: 150px;
+      background-color: #CDDAD8;
+      box-shadow: 5px 0px 9px #e2b8ac;
+      color: black;
+      border-color: #CDDAD8;
+      border-radius: 10px;
+      margin-left: 800px;
+
+    }
+
+    .lab-cad {
+      font-size: 20px;
+      height: 25px;
+      width: 50px;
+      border-radius: 5px;
+      color: black;
+      margin-left: 100px;
+      font-family: 'Chilanka', cursive;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+
+    &copy; Curso Web - Todos os Direitos reservados</div>
+
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
